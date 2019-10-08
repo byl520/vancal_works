@@ -1,0 +1,30 @@
+{
+  "id": "1444859",
+  "name": "vancl",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "689253",
+      "name": "箭头 上升",
+      "font_class": "jiantoushangsheng",
+      "unicode": "e7f1",
+      "unicode_decimal": 59377
+    },
+    {
+      "icon_id": "689254",
+      "name": "箭头 下降",
+      "font_class": "jiantouxiajiang",
+      "unicode": "e7f2",
+      "unicode_decimal": 59378
+    },
+    {
+      "icon_id": "10995713",
+      "name": "194音量、喇叭、声音",
+      "font_class": "yinlianglabashengyin",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    }
+  ]
+}

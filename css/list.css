@@ -1,0 +1,244 @@
+.space{
+	display: block;
+    width: 100%;
+    height: 10px;
+    line-height: 0px;
+    font-size: 0px;
+    clear: both;
+    overflow: hidden;
+}
+
+.content{
+	width: 1200px;
+	margin: 10px auto 25px auto;
+}
+.xinpin #xl{
+	color: #fff;
+	font-size: 24px;
+	margin-left: 60px;
+}
+
+.time-item{
+    	font-size: 18px;
+    	color: #fff;
+    	position: absolute;
+    	right: 20px;
+    }
+    .time-item strong {
+        background: #fff;
+        color: #a10000;
+        line-height: 36px;
+        font-size: 22px;
+        font-family: Arial;
+        padding: 5px 10px;
+        /*margin-right: 10px;*/
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+.xinpin{
+	width: 1200px;height: 55px;
+	margin: 25px auto;
+	background: rgb(236,88,74);
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.xinpin h1{
+	font-size: 24px;
+	color: white;
+	position: absolute;
+	left: 46%;
+	margin: 0;
+}
+.xinpin #more a{
+	display: block;
+	height: 55px;
+	line-height:10px;
+	font-size: 22px;
+	color: #fff;
+	position: absolute;
+	right: 15px;
+	cursor: pointer;
+}
+.dls{
+	width: 1210px;
+	height: auto;
+	margin: 10px auto 0 auto;
+}
+.dls dl{
+	width: 232px;
+	height: 327px;
+	float: left;
+	/*margin-right: 10px;*/
+	cursor: pointer;
+	/*margin-left: 50px;*/
+	margin: 0 10px 10px 50px;
+}
+.dls dl:hover{
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+}
+.dls dl img{
+	height: 232px;
+}
+.dls dd{
+	height: 95px;
+}
+.dls dl dd .name{
+	width: 200px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 45px;
+	line-height: 45px;
+	font-size: 16px;
+	margin-top: 10px;
+	padding-left: 10px;
+}
+.price{
+	height: 40px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+#oldPrice,#oldPrice b{
+	font-size: 14px;
+	color: rgb(187,43,52);
+}
+#oldPrice{
+	padding-left: 10px;
+}
+#salePrice{
+	font-size: 14px;
+	position: absolute;
+	right: 5px;
+}
+#salePrice b{
+	font-size: 20px;
+	font-weight: bold;
+	color: rgb(187,43,52);
+}
+
+
+
+
+.breadnav{
+				width: 1200px;
+				line-height: 40px;
+    			clear: both;
+    			margin: 0 auto;
+			}
+			.location{
+				float: left;
+				display: inline;
+			}
+			.location span{
+				color: #b4b4b4;
+			}
+			.location a{
+				color: #333;
+			}
+			.find{
+				display: inline;
+			    float: right;
+			    color: #b4b4b4;
+			}
+			.find span{
+				color: #a00000;
+    			padding: 0px 4px;
+			}
+			
+			.selectarea{
+				width: 1198px;
+				height: 35px;
+				margin: 0 auto 10px auto;
+				line-height: 24px;
+				border: 1px solid #C7CACD;
+    			clear: both;
+    			overflow: hidden;
+			}
+			.selectareaLeft{
+				display: inline;
+			    float: left;
+			    width: 66px;
+			    line-height: 37px;
+			    text-align: center;
+			}
+			.selectareaRight{
+				display: inline;
+			    float: left;
+			    width: 1130px;
+			    height: 37px;
+			    border-left: 1px solid #ccc;
+			    background: #fff;
+			}
+			.selectareaRight ul{
+				width: 1130px;height: 37px;
+				margin: 0;
+				padding: 0;
+			}
+			.selectareaRight ul li{
+				display: block;
+			    float: left;
+			    height: 24px;
+			    line-height: 37px;
+			    margin-left: 25px;
+			    white-space: nowrap;
+			}
+			
+			.floatdiv{
+				width: 1200px;
+			    height: 34px;
+			    margin: 0 auto 15px auto;
+			    position: relative;
+			    border: 1px solid #ccc;
+			    border-top: 1px solid #b81c22;
+			}
+			.searchCol{
+				width: 410px;
+				height: 34px;
+				float: left;
+			}
+			.searchCol ul li{
+				float: left;
+			    height: 34px;
+			    border: 1px solid #f5f5f5;
+			    border-bottom: none;
+			    border-top: none;
+			    line-height: 34px;
+			    padding: 0px 20px 0px 20px;
+			}
+			.searchCol ul li em:hover{
+				color: #b81c22;
+			}
+			.last1{
+				background: #eee;
+				border-right: 1px solid #ccc;
+				border-left: 1px solid #ccc;
+				position: relative;
+			}
+			.searchbarPrice{
+				float: right;
+				height: 34px;
+			    line-height: 34px;
+			    width: 88px;
+			    text-align: center;
+			    background: #eee;
+			    border-left: 1px solid #ccc;
+			}
+			.last1 .sednav1{
+				width: 82px;
+			    background: #fff;
+			    position: absolute;
+			    left: -2px;
+			    top: 34px;
+			    z-index: 999;
+			    display: none;
+			   border: 1px solid #eee;
+			   border-top: none;
+			}
+			.last1 .sednav1 li{
+				background: #eee;
+			}
+			.last1 .sednav1 li:hover{
+				background: #fff;
+			}

@@ -1,0 +1,110 @@
+/*底部通栏*/
+.vanclFoot{
+    width: 1120px;
+    height: 282px;
+    margin: 25px auto;
+    padding: 0px 40px 0px;
+    border: 1px solid #e0e0e1;
+    overflow: hidden;
+}
+.vanclFoot .customer{
+	margin: 33px 0px 23px;
+    overflow: hidden;
+}
+.vanclFoot .customer ol li{
+	width: 370px;
+    height: 138px;
+    border-right: 1px solid #e0e0e1;
+    margin-right: 0px;
+    float: left;
+}
+.customer ol li .p1{
+	margin: 15px auto 30px;
+	text-align: center;
+}
+.p2{
+	margin: 0px auto;
+    width: 156px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    background: #b81c22;
+    color: #ffffff;
+}
+.p3{
+	text-align: center;
+    font-size: 14px;
+    color: #727171;
+    line-height: 26px;
+}
+.p3 i{
+	color: #a10000;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.others{
+	display: block;
+	height: 26px;
+    padding: 17px 0px 14px;
+    background: #f8f8f8;
+    width: 100%;
+    margin: 0;
+}
+.others ul li{
+	padding: 0px 65px;
+    line-height: 26px;
+    border-right: 1px solid #dadadb;
+    width: auto;
+    text-align: center;
+    margin-right: 0px;
+    float: left;
+}
+
+
+.footArea .foottop{
+	width: 100%;
+    height: auto;
+    margin: 0px auto;
+    border-top: 1px solid #3e3a39;
+    margin-bottom:20px;
+}
+.foottop1{
+	width: 1200px;
+    height: auto;
+    margin: 10px auto;
+}
+.foottop1 p{
+	text-align: center;
+    line-height: 25px;
+    color: #3e3a39;
+}
+.footbottom{
+	width: 980px;
+    margin: 0px auto 25px;
+    text-align: center;
+}
+.footbottom a{
+	margin: 0 10px;
+}
+.footbottom a img{
+	height: 42px;
+}
+
+
+.back{
+	position: fixed;
+    right: 10px;
+    bottom: 20px;
+    z-index: 100;
+    width: 73px;
+    height: 279px;
+    border: 1px solid #b81b22;
+    border-bottom: none;
+    margin-bottom: 30px;
+}
+.back li{
+	width: 73px;
+    border-bottom: 1px solid #b81b22;
+}

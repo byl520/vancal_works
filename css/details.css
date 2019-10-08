@@ -1,0 +1,329 @@
+ * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .top1-cont,
+        .main-cont {
+            margin: 0 auto;
+            width: 1200px;
+        }
+
+        #top1 {
+            height: 48px;
+        }
+
+        .top1-cont {
+            height: 48px;
+            border-bottom: 2px solid #e5e6e6;
+        }
+
+        .top1-cont p {
+            float: left;
+            line-height: 48px;
+            font-size: 20px;
+            color: black;
+        }
+
+        .top1-cont ul {
+            float: right;
+        }
+
+        .top1-cont ul li {
+            float: left;
+        }
+
+        .top1-cont ul li a {
+            background: url(../images/a_03.jpg) no-repeat right center;
+            padding: 0 20px 0 13px;
+            font-size: 14px;
+            color: #808080;
+            line-height: 48px;
+        }
+
+        .top1-cont ul .li1 a {
+            background: #fff;
+    
+        }
+
+
+        #main {
+            height: 494px;
+        }
+
+        .main-cont {
+            height: 494px;
+        }
+
+        .left {
+            float: left;
+            padding-top: 37px;
+            width: 158px;
+            height: 457px;
+        }
+
+        .right {
+            float: left;
+            width: 536px;
+            height: 494px;
+        }
+
+        .box1 {
+            margin-bottom: 50px;
+            border: 3px solid #a10000;
+            width: 70px;
+            height: 70px;
+        }
+        .box1 img{
+            width: 70px;
+            height: 70px;
+        }
+
+        .center {
+            float: left;
+            padding-top: 37px;
+            width: 503px;
+            height: 457px;
+        }
+
+        .leftBox {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            cursor: pointer;
+            border: 2px solid #e5e6e6;
+        }
+        .leftBox img{
+            width: 400px;
+            height: 400px;
+        }
+
+        .mask {
+            width: 200px;
+            height: 200px;
+            background: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+
+        .rightBox {
+            position: absolute;
+            top: 85px;
+            left: 600px;
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            display: none;
+            overflow: hidden;
+        }
+        .rightBox img{
+            width: 800px;
+            height: 800px;
+        }
+
+        .bigImg {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+
+
+        .div1 {
+            margin-top: 40px;
+            height: 23px;
+            color: #980000;
+        }
+
+        .div1 p {
+            display: inline;
+            font-size: 14px;
+            line-height: 23px;
+            padding-right: 22px;
+        }
+
+        .div1 a {
+            color: #980000;
+        }
+
+        .div2 {
+            margin-top: 25px;
+            height: 45px;
+        }
+
+        .div2 p {
+            float: left;
+            font-size: 14px;
+            color: #9d9d9c;
+            margin-left:3px;
+        }
+
+        .div2 ul {
+            float: left;
+        }
+
+        .div2 ul li {
+            float: left;
+            padding: 5px 10px;
+            font-size: 14px;
+            color: black;
+            margin-right: 20px;
+        }
+        .div2 ul li:nth-child(1){
+            margin-left: 5px;
+        }
+
+        .div3 {
+            margin-top: 20px;
+            height: 46px;
+        }
+        .div3-1{
+            width: 260px;
+            height: 28px;
+            border:1px solid #980000;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: center;
+            margin-left:40px;
+            display: none;
+        }
+
+        .div3 p {
+            float: left;
+            font-size: 14px;
+            color: #9d9d9c;
+            margin-left:3px;
+        }
+
+        .div3 ul {
+            float: left;
+        }
+
+        .div3 ul li {
+            float: left;
+            padding: 5px;
+            font-size: 12px;
+            color: #cdcdcd;
+            /* border:2px solid #cdcdcd; */
+            margin-right: 15px;
+
+        }
+
+        .div4 {
+            margin-top: 20px;
+            height: 22px;
+            
+        }
+
+        .div4 p {
+            float: left;
+            font-size: 14px;
+            color: #9d9d9c;
+            margin-left:3px;
+        }
+
+        .div4 select {
+            float: left;
+        }
+
+        .div5 {
+            margin-top: 20px;
+            height: 18px;
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+        .div5 .p1 {
+            float: left;
+            color: #9d9d9c;
+            padding-right: 9px;
+            font-size: 14px;
+        }
+
+        .div5 .p22 {
+            float: left;
+            color: #6c6868;
+            padding-right: 16px;
+        }
+
+        .div5 .p3 {
+            float: left;
+            color: #af5067;
+        }
+
+        .div6 {
+            margin-top: 20px;
+        }
+
+        .div6 button {
+            width: 172px;
+            height: 40px;
+            float: left;
+            font-size: 16px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        .div6 .btn1 {
+            border: 2px solid #b4141a;
+            background: #f7abaf;
+            margin-right: 12px
+        }
+
+        .div6 .btn2 {
+            border: 2px solid #d0696d;
+            background: #b81c22 url(../images/gwc_03.jpg) no-repeat 20px 7px;
+
+        }
+
+        .tu {
+            margin-top: 15px;
+        }
+        .old{
+            border:2px solid #cdcdcd;
+        }
+
+        .current {
+            border: 2px solid #b81c22;
+        }
+
+        .jumbotron .p1{
+            background: #ccc;
+            width: 400px;
+            height: 55px;
+            font-size: 30px;
+            font-weight: 900;
+            margin-left: 30px;
+            line-height: 55px;
+            border-radius: 10px;
+            text-align: center
+        }
+        .jumbotron a{
+    background: red;
+    display: block;
+    width: 158px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-left: 30px;
+    border-radius: 8px;
+    font-weight: 800;
+    color: black;
+        }
+        
+        .btnpics img{
+            display:block;
+            width: 1300px;
+            margin: 0 auto;
+        }

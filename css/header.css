@@ -1,0 +1,264 @@
+
+.head{
+	width: 100%;
+	height: 30px;
+	background: rgb(247,247,247);
+	border-bottom: 1px solid rgb(204,204,204);
+}
+.head-con{
+	width: 1200px;
+	height: 30px;
+	margin: 0 auto;
+}
+.header-right{
+	float: right;
+	display: flex;
+	align-items: center;
+}
+.header-right .notice{
+	float: left;
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+}
+#notice{
+	font-size: 20px;
+	text-decoration: none;
+	color: rgb(161,0,0);
+	margin-right: 10px;
+}
+#notice1{
+	color: #808080;
+	text-decoration: none;
+}
+#notice1 .iconfont{
+	margin-right: 5px;
+	color: rgb(161,0,0);
+}
+#notice1:hover{
+	color: rgb(161,0,0);
+}
+.header-right .logo{
+	width: 50px;
+	height: 30px;
+	float: right;
+	display: flex;
+	align-items: center;
+}
+.weixin{
+	position: relative;
+	margin-right: 5px;
+}
+#qrcode{
+	position: absolute;
+	right: 0;
+	top: 25px;
+	z-index: 100;
+	display: none;
+}
+#qrcode img{
+	width: 148px;
+}
+.logo img{
+	width: 20px;
+}
+
+.header-left{
+	float: right;
+	line-height: 30px;
+	margin-right: 15px;
+}
+.header-left #myorder{
+	color: #808080;
+	text-decoration: none;
+}
+.header-left #myorder:hover{
+	color: rgb(161,0,0);
+}
+#login,#signin{
+	color: #23527c;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+
+.search{
+	width: 1200px;
+	height: 62px;
+	margin: 30px auto 0 auto!important;
+}
+.search1{
+	float: right;
+	width: 438px;
+	height: 60px;
+}
+.search2{
+	width: 438px;
+	height: 30px;
+	
+}
+#searchs{
+	width: 300px;
+	height: 30px;
+	float: left;
+}
+#searchs #text{
+	width: 239px;
+    height: 27px;
+    padding: 0px 5px;
+    line-height: 27px;
+    border: 1px solid #c9caca;
+    float: left;
+}
+#searchs #sub{
+	width: 49px;
+    height: 29px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    color: #fff;
+    background: rgb(184,28,35);
+}
+.shop{
+	width: 105px;
+    height: 27px;
+    border: 1px solid #c1383e;
+    background: url(http://i2.vanclimg.com/cms/20150228/vanclsprite.png) no-repeat scroll -154px 0px;
+    position: relative;
+    z-index: 10;
+    float: right;
+    color: #fff;
+    text-align: center;
+    line-height: 27px;
+    cursor: pointer;
+}
+.shop1{
+	width: 315px;
+    height: auto;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #b81c22;
+    position: absolute;
+    right: -1px;
+    top: 26px;
+    /*_right: -2px;*/
+    background: #ffffff;
+    display: none;
+}
+.hot{
+	margin: 5px 15px;
+}
+
+
+.nav{
+	width: 1200px;height: 46px;
+	margin: 5px auto 25px auto!important;
+}
+.nav .img{
+	display: block;
+    width: 185px;
+    height: 46px;
+    background: url(http://i4.vanclimg.com/cms/20160923/logo18546.png) no-repeat scroll;
+    float: left;
+    margin-right: 10px;
+}
+.nav ul{
+	height: 46px;
+}
+.nav ul li{
+	float: left;
+    width: 99px;
+    line-height: 22px;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    position: relative;
+}
+.nav ul li:hover{
+	border-bottom: 5px solid #b81c22;
+}
+.nav ul li a{
+	color: #727171;
+	 font-size: 16px;
+}
+.nav ul li a:hover{
+	color: #b81c22;
+}
+.nav ul li span{
+	display: block;
+    height: 16px;
+    width: 1px;
+    border-right: solid 1px #888;
+    position: absolute;
+    right: 1px;
+    top: 5px;
+    overflow: hidden;
+}
+.nav ul li .sednav{
+	width: 99px;
+    background: #fff;
+    position: absolute;
+    left: -2px;
+    top: 34px;
+    z-index: 999;
+    display: none;
+}
+.sednav ol li{
+	font-size: 16px;
+}
+.sednav ol li:hover{
+	border: none;
+	cursor: pointer;
+	color: #b81c22;
+}
+
+/*轮播图*/
+			.box{
+				width: 1200px;height: 535px;
+				margin: 0 auto;
+				position: relative;
+			}
+			.box img{
+				width: 1200px;
+				position: absolute;
+			}
+			.button{
+				position: absolute;
+				z-index: 100;
+				font-size: 50px;
+				color: #ccc;
+				cursor: pointer;
+				-webkit-user-select: none;
+				display: none;
+				border: none;
+				background: rgba(0,0,0,0);
+			}
+			.button:focus{
+				outline: 0;
+			}
+			#prev{
+				position: absolute;
+				top: 250px;
+			}
+			#next{
+				position: absolute;
+				top: 250px;
+				right: 0;
+			}
+			.box ul{
+				z-index: 1000;
+				position: absolute;
+				top: 500px;
+				left: 550px;
+			}
+			.box ul li{
+				width: 15px;height: 15px;
+				border-radius: 50%;
+				background-color: rgba(204,204,204,.5);
+				list-style: none;
+				float: left;
+				margin-right: 5px;
+				cursor: pointer;
+			}
+
