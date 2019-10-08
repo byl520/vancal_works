@@ -5,7 +5,7 @@
 // var bigImg=$(".bigImg");
 
 var src1 = window.location;
-// console.log(src1);
+console.log(src1);
 var container = document.querySelector(".container");
 var reg = /^\?id=(\d+)$/;
 if (!reg.test(src1.search)) {
@@ -240,7 +240,7 @@ ul2.onclick=function(e){
             // window.location.href = "http://www.vancl.com/";
         var login=getCookie("login");
         if(!login){
-            var srcurl="details.gtml"+src1.search
+            // var srcurl="details.gtml"+src1.search
             window.location.htref = `login.html?path1="${srcurl}"`; 
         }
 
