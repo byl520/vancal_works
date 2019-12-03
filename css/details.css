@@ -118,8 +118,8 @@
 
         .rightBox {
             position: absolute;
-            top: 85px;
-            left: 600px;
+            top: 285px;
+            left: 49%;
             width: 400px;
             height: 400px;
             border: 1px solid black;

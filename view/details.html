@@ -12,6 +12,52 @@
     <link rel="stylesheet" type="text/css" href="../css/list.css"/>
     <link rel="stylesheet" type="text/css" href="../font/iconfont.css"/>
     <script src="../jquery/jquery.js"></script>
+    <style>
+        .container{
+    		position: relative;
+    	}
+    	#false{
+			width:300px;
+			height: 100px;
+			border: 1px solid grey;
+			border-radius: 10px;
+			box-shadow: 0 0 5px;
+			font-size: 16px;
+			background: #fff;
+			position: absolute;
+			top: 250px;left: 40%;
+			z-index: 100;
+			display: none;
+		}
+		#false p{
+			font-size: 20px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+		}
+		#false #jixu{
+			float: left;
+			display: block;
+			width: 70px;
+			height: 30px;
+			line-height: 30px;
+			margin: 0 50px;
+			color: #fff;
+			background: rgb(180,32,37);
+			border-radius: 5px;
+		}
+		#false #jiesuan{
+			float: left;
+			display: block;
+			width: 70px;
+			height: 30px;
+			line-height: 30px;
+			/*margin: 0 auto;*/
+			color: #fff;
+			background: rgb(180,32,37);
+			border-radius: 5px;
+		}
+    </style>
 </head>
 <body>
         <div class="head">
@@ -37,13 +83,13 @@
                     
                     <div class="header-left">
                         <div id="welcome">
-                            您好，欢迎光临凡客诚品！&nbsp;
+                            您好，<strong class="loginuser">欢迎光临凡客诚品！</strong>&nbsp;
                             <span>
-                                <a href="#" id="login">登录</a>
+                                <a href="login.html" id="login">登录</a>
                                 &nbsp;|&nbsp;
-                                <a href="#" id="signin">注册</a>
+                                <a href="register.html" id="signin">注册</a>
                             </span>
-                            <a href="#" id="myorder">我的订单</a>
+                            <a id="myorder" style="cursor:pointer">我的订单</a>
                         </div>
                     </div>
                 </div>
@@ -53,18 +99,20 @@
                 <div class="search1">
                     <div class="search2">
                         <div id="searchs">
-                            <form action="#">
+                            <!-- <form action="#">
                                 <input type="text" id="text" placeholder="搜“日式免烫衬衫”，体验与众不同" />
                                 <button type="submit" id="sub">搜索</button>
-                            </form>
+                            </form> -->
                         </div>
-                        <div class="shop">
-                            <i>&nbsp;&nbsp;购物车</i>
-                            (<span id="">0</span>)
-                            <div class="shop1">
-                                您的购物车没有任何商品
+                        <a href="../view/cart.html">
+                            <div class="shop">
+                                <i id="i">&nbsp;&nbsp;购物车</i>
+                                (<span id="count">0</span>)
+                                <div class="shop1">
+                                    您的购物车没有任何商品
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="hot">
                         <em>热门搜索：</em>
@@ -192,97 +240,8 @@
                 </ul>
             </div>
     <div class="container">
-<!-- <div id="top1">
-    <div class="top1-cont">
-        <p>户外运动弹力风衣&nbsp;男款&nbsp;深灰</p>
-        <ul>
-            <li><a href="">产品描述</a></li>
-            <li><a href="">评论</a></li>
-            <li class="li1"><a href="">提问</a></li>
-        </ul>
+
     </div>
-</div>
-
-
-<div id="main">
-    <div class="main-cont">
-        <div class="left">
-            <div class="box1"><img src="../images/more-small.jpg" alt=""></div>
-            <div class="box1"><img src="../images/more-small.jpg" alt=""></div>
-            <div class="box1"><img src="../images/more-small.jpg" alt=""></div>
-        </div>
-
-
-        <div class="center"> -->
-            <!-- 放大镜 -->
-            <!-- <div class="leftBox">
-                <img src="../images/small.jpg" alt="" class="smallImg">
-                <div class="mask"></div>
-            </div>
-            <div class="rightBox">
-                <img src="../images/big.jpg" alt="" class="bigImg">
-            </div>
-        </div>
-
-
-        <div class="right">
-            <div class="div1">售价：&nbsp;&nbsp;￥<p>538.00</p>充100返100,&nbsp;<a href="">点击充值</a></div>
-            <div class="div2">
-                <p>颜色：</p>
-                <ul class="ul1">
-                    <li class="li1 current">黑色</li>
-                    <li class="old">白色</li>
-                    <li class="old">灰色</li>
-                    <li class="old">浅绿色</li>
-                </ul>
-            </div>
-
-            <div class="div3">
-                <p>尺码：</p>
-                <ul class="ul2">
-                    <li class="old">L</li>
-                    <li class="old">XL</li>
-                    <li class="old">2XL</li>
-                    <li class="old">3XL</li>
-                    <li class="old">4XL</li>
-                    <li class="old">5XL</li>
-                </ul>
-
-            </div>
-            <div class="div3-1">请选择您要购买的商品尺寸</div>
-            <div class="div4">
-                <p>数量：</p>
-                <select name="" id="">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>
-            </div>
-            <div class="div5">
-                <p class="p1">已选：</p>
-                <p class="p2">深灰</p>
-                <p class="p3">现在有货</p>
-            </div>
-
-            <div class="div6">
-                <button class="btn1">立即购买</button>
-                <button class="btn2">加入购物车</button>
-            </div>
-
-            <img src="../images/tu_03.jpg" alt="" class="tu">
-
-
-        </div>
-    </div>
-</div> -->
-</div>
 <div class="btnpics">
     <img src="../images/dpypc_01_01.jpg" alt="">
     <img src="../images/pc.jpg" alt="">
@@ -355,6 +314,11 @@
     
 </body>
 </html>
+<script src="../jquery/jquery.js"></script>
 <script src="../js/utils.js"></script>
 <script src="../js/cookie.js"></script>
+<script src="../js/getLogin.js"></script>
 <script src="../js/details.js"></script>
+<script src="../js/foot.js"></script>
+<script src="../js/header.js"></script>
+

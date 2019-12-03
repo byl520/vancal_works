@@ -1,7 +1,10 @@
-let src1=window.location;
+
 var form=document.querySelector('.form1')
 var user=document.querySelector('.user')
 var pass=document.querySelector('.pass')
+var fal=document.getElementById('false')
+
+
 form.onsubmit=function(e){
 	e = e || window.event
 	e.preventDefault()
@@ -19,15 +22,36 @@ form.onsubmit=function(e){
 			}
 			
 		})
-		var uname=JSON.parse(p1).result[0].name;
-		var upass=JSON.parse(p1).result[0].pass;
-		 var ids=JSON.parse(p1).result[0].user_id;//获取用户id
-		 var or=JSON.parse(p1).or;//获取到返回登录状态	
+		
+		
+		 var or=JSON.parse(p1).or;	
 		if(or==='登录成功'){
+			var ids=JSON.parse(p1).result[0].user_id;//获取用户id
 			setCookie('login',ids);
+			
+
+			var src1 = window.location;
+			var reg = /^\?path1=(.+)$/ 
+
+			if(reg.test(src1.search)){
 				
+				let aa=reg.exec(src1.search)
+				console.log(aa)
+				window.location.href=aa[1];
+			}else{
+				window.location.href='homePage.html';
+			}	
+		}else if(or==='登录失败'){
+			fal.style.display='block';
 		}
 	}
+	
+	//点击确认清空input
+	$('#yes').click(function(){
+			$('#false').hide();
+            $('.form1 input').val('');
+        });
+	
 }           
 				   
 					

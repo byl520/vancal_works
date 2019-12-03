@@ -170,15 +170,6 @@
 			}
 			
 				
-		
-			
-						
-			
-		
-			
-			
-		
-		
 
 
 .big>div{
@@ -193,6 +184,35 @@
     display: block;
 }
 
+
+#false{
+	width:300px;
+	height: 85px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	box-shadow: 0 0 5px;
+	font-size: 16px;
+	background: #fff;
+	position: absolute;
+	top: 50px;left: 55px;
+	z-index: 100;
+	display: none;
+}
+#false p{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+#false #yes{
+	display: block;
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 auto;
+	color: #fff;
+	background: rgb(180,32,37);
+	border-radius: 5px;
+}
 
 		</style>
 		<script src="../jquery/jquery.js"></script>
@@ -213,7 +233,7 @@
 				</div>
 				<div class="right">
 				<strong>凡客Vancl登录</strong>
-				<span>没有账户免费<a href="#">注册</a></span>
+				<span>没有账户免费<a href="register.html">注册</a></span>
 				<!--表单-->
 				<div class="all">
 					<div class="nav">
@@ -221,14 +241,19 @@
 						<a>快速登录</a>
 					</div>
 					<div class="big">
-					<div class="box active">
+					<div class="box active" style="position: relative;">
 						<form class="form1">
 							<input type="text" class="user" name="username" placeholder="请输入用户名"/>
 							<input type="password" class="pass" name="password"placeholder="请输入密码"/>
 							<p>找回密码</p>
 							<button class="btn" type="submit">登&nbsp;&nbsp;录</button>
 						</form>
-						
+						<div id="false">
+							<p>用户名或密码错误，请重新输入</p>
+							<button id="yes">
+								确定
+							</button>
+						</div>
 					</div>
 					<!--登入完成-->
 					 <div class="box">
@@ -259,11 +284,6 @@
 				$(this).addClass('b').siblings().removeClass('b')
 				 $(".big .box").eq(index).addClass("active").siblings().removeClass("active");
 			})
- 
-           
-				   
-					
-			
 		</script>
 		<script src="../jquery/jquery.js"></script>
 		<script src="../js/utils.js"></script>

@@ -1,54 +1,122 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
-	</head>
-	
-	<body>
-		<div class="top">
-			<div class="top-logo"><img src="../images/11_03.jpg"/></div>
-			</div>
-			<!--top-->
-			<div class="main" >
-				<div class="left">
-					<dl>
-						<dt><img src="../images/11_07.jpg"/></dt>
-						<dd><img src="../images/11_03.jpg"/></dd>
-						<strong>互联网快时尚品牌</strong>
-						
-					</dl>
-				</div>
-				<div class="right">
-				<strong>注册新用户</strong>
-				<span>我已经注册，现在就<a href="#">登入</a></span>
-				<!--表单-->
-				<div class="all">
-					
-					<form action="../servers/register.php" methd="get">
-						<input  class="phone1"type="text" name="mobile"placeholder="请输入手机号" >
-					 <input type="text" class="ma2"name="ma2" >
-					 <input type="text" class="ma"name="vCode"placeholder="验证码" >
-					 
-		             <a href="javascript:;" class="getCode" id="getCode">获取认证码</a>
-                     <!--<input type="text" class="ma2"name="ma2" >-->
-                     <input type="text" class="phone"name="username" placeholder="请输入用户名"/>
-					 <!--<input  class=" phone"type="text" name="number"placeholder="填写用户名" >-->
-					 <input  class="pass"type="text" name="password"placeholder="设定登入密码" >
-					 <input  class="againpass"type="text" name="againPass"placeholder="再次输入密码" >
-					<input type="checkbox" class="checkbox">
-					<i>请阅读<a href="#">《VANCL凡客诚品服务条款》</a></i>
-					<input  class="btn"type="submit"value="登陆注册" />
-					
-					</form>
-				</div>
-				<!--all的-->
-				
-				</div>
-			</div>
-			<script src="../jquery/jquery.js"></script>
-			<script src="../js/register.js"></script>
-	</body>
-	
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/register.css" />
+
+    <script src="../jquery/jquery.js"></script>
+    <style>
+        #false{
+	width:300px;
+	height: 100px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	box-shadow: 0 0 5px;
+	font-size: 16px;
+	background: #fff;
+	position: absolute;
+	top: 150px;left: 55px;
+	z-index: 100;
+	display: none;
+}
+#false p{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+#false #yes{
+	display: block;
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 auto;
+	color: #fff;
+	background: rgb(180,32,37);
+	border-radius: 5px;
+}
+    </style>
+
+
+</head>
+
+<body>
+    <div class="top">
+        <div class="top-logo"><img src="../images/11_03.jpg" /></div>
+    </div>
+    <!--top-->
+    <div class="main">
+        <div class="left">
+            <dl>
+                <dt><img src="../images/11_07.jpg" /></dt>
+                <dd><img src="../images/11_03.jpg" /></dd>
+                <strong>互联网快时尚品牌</strong>
+
+            </dl>
+        </div>
+        <div class="right">
+            <strong>注册新用户</strong>
+            <span>我已经注册，现在就<a href="login.html">登入</a></span>
+            <!--表单-->
+            <div class="all">
+
+                <form methd="get" class="form11">
+                    <input class="phone1" type="text" name="mobile" placeholder="请输入手机号">
+                    <div class="div1 alert alert-danger">手机号码有误，请重填</div>
+
+
+
+                   <div class="box"><input type="text" class="ma" name="vCode" placeholder="验证码"><b class="getCode" id="getCode"><img src="../images/yanzheng.png" class="img1"/></b></div> 
+                    <div class="divq alert alert-danger">请输入正确的验证码</div>
+                    
+                    <!--<input type="text" class="ma2"name="ma2" >-->
+                    <input type="text" class="phone" name="username" placeholder="请输入用户名" />
+                    <div class="divqq alert alert-danger">请输入用户名</div>
+
+
+                    <!--<input  class=" phone"type="text" name="number"placeholder="填写用户名" >-->
+                    <input class="pass" type="text" name="password" placeholder="设定登入密码">
+                    <div class="div4 alert alert-danger">密码最短6位，最长16位</div>
+
+
+                    <input class="againpass" type="text" name="againPass" placeholder="再次输入密码">
+                    <div class="div5 alert alert-danger">请确认输入密码</div>
+
+
+<div class="box2">
+                    <input type="checkbox" class="checkbox">
+                    <i>请阅读<a href="#">《VANCL凡客诚品服务条款》</a></i>
+                    </div>
+                    <input class="btn" type="submit" value="登陆注册" />
+                    <!-- <div class="div6 alert alert-danger">该用户名已存在，请重新注册或登录</div> -->
+                    <div id="false">
+                        <p>该用户已存在，请重新输入</p>
+                        <button id="yes">
+                            确定
+                        </button>
+                    </div>
+                </form>
+            
+            </div>
+            <!--all的-->
+
+        </div>
+    </div>
+    <script>
+        $('.nav a').click (function(){
+            var index = $(this).index();
+            $(this).addClass('b').siblings().removeClass('b')
+             $(".big .box").eq(index).addClass("active").siblings().removeClass("active");
+        })
+    </script>
+    <script src="../jquery/jquery.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/register.js"></script>
+    <script src="../js/utils.js"></script>
+</body>
+
 </html>

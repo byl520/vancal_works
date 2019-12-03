@@ -33,11 +33,11 @@
 				
 				<div class="header-left">
 					<div id="welcome">
-						您好，欢迎光临凡客诚品！&nbsp;
+						您好，<strong class="loginuser">欢迎光临凡客诚品！</strong>&nbsp;
 						<span>
-							<a href="#" id="login">登录</a>
+							<a href="login.html" id="login">登录</a>
 							&nbsp;|&nbsp;
-							<a href="#" id="signin">注册</a>
+							<a href="register.html" id="signin">注册</a>
 						</span>
 						<a href="#" id="myorder">我的订单</a>
 					</div>
@@ -49,14 +49,14 @@
 			<div class="search1">
 				<div class="search2">
 					<div id="searchs">
-						<form action="#">
+						<!-- <form action="#">
 							<input type="text" id="text" placeholder="搜“日式免烫衬衫”，体验与众不同" />
 							<button type="submit" id="sub">搜索</button>
-						</form>
+						</form> -->
 					</div>
 					<div class="shop">
-						<i>&nbsp;&nbsp;购物车</i>
-						(<span id="">0</span>)
+						<i id="i">&nbsp;&nbsp;购物车</i>
+						(<span id="count">0</span>)
 						<div class="shop1">
 							您的购物车没有任何商品
 						</div>
@@ -82,20 +82,25 @@
 					<a href="homePage.html">首页</a>
 					<span>|</span>
 					<div class="sednav">
-						
+						<span id="red"></span>
 					</div>
 				</li>
 				<li class="list">
 					<a href="chenshan.html">衬衫</a>
 					<span>|</span>
 					<div class="sednav">
+						<span id="red"></span>
 						<ol>
 							<li>免烫</li>
 							<li>易打理</li>
 							<li>休闲</li>
+							<li>高支</li>
+							<li>法兰绒</li>
+							<li>灯芯绒</li>
 							<li>牛仔</li>
 							<li>麻棉</li>
 							<li>水洗棉</li>
+							<li>泡泡纱</li>
 							<li>商务衬衫</li>
 						</ol>
 					</div>
@@ -104,10 +109,14 @@
 					<a href="weiyi.html">卫衣</a>
 					<span>|</span>
 					<div class="sednav">
+						<span id="red"></span>
 						<ol>
+							<li>熊本熊</li>
+							<li>创可贴</li>
 							<li>开衫</li>
 							<li>连帽</li>
 							<li>圆领</li>
+							<li>水柔棉</li>
 						</ol>
 					</div>
 				</li>
@@ -115,11 +124,14 @@
 					<a href="waitao.html">外套</a>
 					<span>|</span>
 					<div class="sednav">
+						<span id="red"></span>
 						<ol>
 							<li>大衣</li>
 							<li>皮肤衣</li>
 							<li>夹克</li>
 							<li>西服</li>
+							<li>羽绒服</li>
+							<li>C9设计款</li>
 						</ol>
 					</div>
 				</li>
@@ -127,11 +139,21 @@
 					<a href="txu.html">T恤</a>
 					<span>|</span>
 					<div class="sednav">
+						<span id="red"></span>
 						<ol>
 							<li>熊本熊</li>
 							<li>水柔棉T</li>
 							<li>运动T恤</li>
 							<li>POLO</li>
+							<li>简鱼</li>
+							<li>欧飞鸿</li>
+							<li>好小猪</li>
+							<li>剪纸猪</li>
+							<li>赵老师的猪</li>
+							<li>山鸟叔</li>
+							<li>本广</li>
+							<li>长场雄</li>
+							<li>药</li>
 						</ol>
 					</div>
 				</li>
@@ -139,6 +161,7 @@
 					<a href="zhenzhishan.html">针织衫</a>
 					<span>|</span>
 					<div class="sednav">
+						<span id="red"></span>
 						<ol>
 							<li>棉线衫</li>
 							<li>羊毛衫</li>
@@ -150,6 +173,7 @@
 					<a href="ku.html">裤</a>
 					<span>|</span>
 					<div class="sednav">
+						<span id="red"></span>
 						<ol>
 							<li>针织裤</li>
 							<li>休闲裤</li>
@@ -161,6 +185,7 @@
 					<a href="xie.html">鞋</a>
 					<span>|</span>
 					<div class="sednav">
+						<span id="red"></span>
 						<ol>
 							<li>复古跑鞋</li>
 							<li>帆布鞋</li>
@@ -175,14 +200,27 @@
 					<a href="#">家居配饰</a>
 					<span>|</span>
 					<div class="sednav">
-						
+						<span id="red"></span>
+						<ol>
+							<li>内衣袜品</li>
+							<li>家居服</li>
+							<li>家居鞋</li>
+							<li>床品套件</li>
+							<li>被子</li>
+							<li>毯子</li>
+							<li>枕</li>
+							<li>毛巾</li>
+							<li>手机壳</li>
+							<li>皮带</li>
+							<li>箱包</li>
+						</ol>
 					</div>
 				</li>
 				<li class="list">
 					<a href="#">新品</a>
 					<span>|</span>
 					<div class="sednav">
-						
+						<span id="red"></span>
 					</div>
 				</li>
 			</ul>
@@ -265,11 +303,13 @@
 		</div>
 	</body>
 	<script src="../jquery/jquery-1.8.3.min.js"></script>
-	<script src="../js/foot.js"></script>
-	<script src="../js/header.js"></script>
+	
 	<script src="../js/utils.js"></script>
 	<script src="../js/cookie.js"></script>
 	<script src="../js/pagination.js"></script>
+	<script src="../js/getLogin.js"></script>
+	<script src="../js/foot.js"></script>
+	<script src="../js/header.js"></script>
 	<script src="../js/jss/txu.js"></script>
-	<script src="../js/sednav.js"></script>
+	
 </html>

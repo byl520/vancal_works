@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title>购物车</title>
+</head>
+<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+
+<link type="text/css" rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/foot.css">
+<body>
+<div class="shopping-car-container">
+	<div id="header">
+		<div class="logo"><a href="homePage.html"><img src="http://i4.vanclimg.com/cms/20160923/logo18546.png"/></a></div>
+		<div class="login">
+			<span>您好，欢迎光临凡客诚品。<span>
+			<span><a href="homePage.html">继续购物</a></span>
+			<span><a href="">帮助中心</a></span>
+		</div>
+	</div>
+	<div id="nav">
+		<div><a class="oncolor" href="">1.我的购物车</a><a href="">2.填写核对信息单</a><a href="">3.成功提交订单</a></div>
+		<div><img src=""/><strong>我的购物车</strong></div>
+		<div><p>温馨提示:</p><span>1.选购清单中的商品无法保留库存,请您及时结算。2.商品的价格和库存将以订单提交时为准。3.促销活动满减优惠将均摊至商品小计中。</span></div>
+	</div>
+<div id="payMoney">
+	<div class="car-headers-menu">
+		<div class="row">
+			<div class="col-md-1 car-menu">
+				<label><input type="checkbox" id="check-goods-all" /><span id="checkAll">全选</span></label>
+			</div>
+			<div class="col-md-3 car-menu">商品信息</div>
+			<div class="col-md-3 car-menu">商品参数</div>
+			<div class="col-md-1 car-menu">单价</div>
+			<div class="col-md-1 car-menu">数量</div>
+			<div class="col-md-1 car-menu">金额</div>
+			<div class="col-md-2 car-menu">操作</div>
+		</div>
+	</div>
+	<div class="goods-content">
+		<!--goods display-->
+		
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-body bottom-menu-include">
+			<div class="col-md-1 check-all-bottom bottom-menu">
+				<label>
+						<input type="checkbox" id="checked-all-bottom" />
+						<span id="checkAllBottom">全选</span>
+					</label>
+			</div>
+			<div class="col-md-1 bottom-menu">
+				<span id="deleteMulty">
+						删除
+				</span>
+			</div>
+			<div class="col-md-6 bottom-menu">
+
+			</div>
+			<div class="col-md-2 bottom-menu">
+				<span>已选商品 <span id="selectGoodsCount">0</span> 件</span>
+			</div>
+			<div class="col-md-1 bottom-menu">
+				<span>合计：<span id="selectGoodsMoney">0.00</span></span>
+			</div>
+			<div class="col-md-1 bottom-menu submitData submitDis">
+				结算
+			</div>
+		</div>
+	</div>
+
+</div>
+	<!--删除确认弹框-->
+	<div class="modal fade" tabindex="-1" role="dialog" id="deleteItemTip" aria-labelledby="gridSystemModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="gridSystemModalLabel">提示</h4>
+				</div>
+				<div class="modal-body">
+					确认删除此商品？
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary deleteSure">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--是否勾选商品提示-->
+	<div class="modal fade" tabindex="-1" role="dialog" id="selectItemTip" aria-labelledby="gridSystemModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="gridSystemModalLabel">提示</h4>
+				</div>
+				<div class="modal-body">
+					请选择要删除的商品！
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--批量删除商品-->
+	<div class="modal fade" tabindex="-1" role="dialog" id="deleteMultyTip" aria-labelledby="gridSystemModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="gridSystemModalLabel">提示</h4>
+				</div>
+				<div class="modal-body">
+					确认删除选择的商品！
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary deleteMultySure">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footArea">
+			<div class="foottop">
+				<div class="foottop1">
+					<p> Copyright 2007 - 2019 vancl.com All Rights Reserved 京ICP证100557号 京公网安备11011502002400号 出版物经营许可证新出发京批字第直110138号</p>
+					<p> 凡客诚品（北京）科技有限公司</p>
+				</div>
+			</div>
+			<div class="footbottom">
+				<a href="javascript:;"><img src="../images/f1.jpg"/></a>
+				<a href="javascript:;"><img src="../images/f2.jpg"/></a>
+				<a href="javascript:;"><img src="../images/f3.jpg"/></a>
+				<a href="javascript:;"><img src="../images/f4.jpg"/></a>
+				<a href="javascript:;"><img src="../images/f5.jpg"/></a>
+				<a href="javascript:;"><img src="../images/f6.jpg"/></a>
+			</div>
+	</div>
+</div>
+
+	<script type="text/javascript" src="../jquery/jquery.js"></script>
+	<script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+	<script src="../js/utils.js"></script>
+	<script src="../js/cookie.js"></script>
+	<script src="../js/pagination.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>	
+</body>
+</html>

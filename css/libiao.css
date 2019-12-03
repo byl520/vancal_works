@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+.main_box111,.box111,.box111 .addGoods11{
+	width: 1200px;
+	height: 360px;
+}
+.addGoods11{
+	padding-left: 15px;
+}
+.box111 .addGoods11 li{
+	width: 200px;
+	height: 350px;
+	box-shadow: 3px 2px 30px rgba(0,0,0,.1);
+	float: left;
+	margin-left: 30px;
+	text-align: center;
+	position: relative;
+	transition: all .6s ease-out;
+}
+.box111 .addGoods11 li h3{
+	
+	color: #333;
+	font-size: 26px;
+	
+}
+.box111 .addGoods11 li p{
+	margin-top: 7px;
+	color: #666;
+	font-size: 14px;
+	width: 180px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.box111 .addGoods11 li img{
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	right: 10px;
+	bottom: 0px;
+	transition: all .6s ease-out;
+}
+
+.box111 .addGoods11 .on111{
+	width: 232px;
+	height: 350px;
+	background-color:#fff;
+	text-align: left;
+}
+.box111 .addGoods11 .on111 h3{
+	padding-left: 20px;
+	color: rgb(236,88,74);
+}
+.box111 .addGoods11 .on111 p{
+	margin-left: 20px;
+	color: rgb(236,88,74);
+}
+.box111 .addGoods11 .on111 img{
+	width: 260px;
+	height: 260px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	box-shadow: 0 0 15px #ccc;
+}
+

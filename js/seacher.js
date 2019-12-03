@@ -125,16 +125,16 @@ form.onsubmit=function(e){
     	var str=strs;
 
         data.ar1.forEach(item => {
-            str+=` <dl href="details.html?id=${item.goods_id}">
-            <dt><img src="${item.goods_pics}"/></dt>
-            <dd>
-                <div class="name">${item.goods_name}</div>
-                <div class="price">
-                    <span id="oldPrice">￥<b>${item.goods_price}</b></span>
-                    <span id="salePrice"><a href="details.html?id=${item.goods_id}"><b>点我购买</b></a></span>
-                </div>
-            </dd>
-        </dl>
+            str+=` <a href="details.html?id=${item.goods_id}"><dl>
+       		<dt><img src="${item.goods_pics}"/></dt>
+       		<dd>
+           		<div class="name">${item.goods_name}</div>
+           		<div class="price">
+               		<span id="oldPrice">￥<b>${item.goods_price}</b></span>
+               		<span id="salePrice"><b>点我购买</b></span>
+           		</div>
+       		</dd>
+   		</dl></a>
              `
          });
          str+='</div>'
@@ -181,16 +181,16 @@ form.onsubmit=function(e){
     	var str=strs;
 
         data.desc.forEach(item => {
-            str+=` <dl href="details.html?id=${item.goods_id}">
-            <dt><img src="${item.goods_pics}"/></dt>
-            <dd>
-                <div class="name">${item.goods_name}</div>
-                <div class="price">
-                    <span id="oldPrice">￥<b>${item.goods_price}</b></span>
-                    <span id="salePrice"><a href="details.html?id=${item.goods_id}"><b>点我购买</b></a></span>
-                </div>
-            </dd>
-        </dl>
+            str+=` <a href="details.html?id=${item.goods_id}"><dl>
+       		<dt><img src="${item.goods_pics}"/></dt>
+       		<dd>
+           		<div class="name">${item.goods_name}</div>
+           		<div class="price">
+               		<span id="oldPrice">￥<b>${item.goods_price}</b></span>
+               		<span id="salePrice"><b>点我购买</b></span>
+           		</div>
+       		</dd>
+   		</dl></a>
              `
          });
          str+='</div>'
@@ -207,16 +207,16 @@ form.onsubmit=function(e){
     	var str=strs;
 
         data.desc1.forEach(item => {
-            str+=` <dl href="details.html?id=${item.goods_id}">
-            <dt><img src="${item.goods_pics}"/></dt>
-            <dd>
-                <div class="name">${item.goods_name}</div>
-                <div class="price">
-                    <span id="oldPrice">￥<b>${item.goods_price}</b></span>
-                    <span id="salePrice"><a href="details.html?id=${item.goods_id}"><b>点我购买</b></a></span>
-                </div>
-            </dd>
-        </dl>
+            str+=` <a href="details.html?id=${item.goods_id}"><dl>
+       		<dt><img src="${item.goods_pics}"/></dt>
+       		<dd>
+           		<div class="name">${item.goods_name}</div>
+           		<div class="price">
+               		<span id="oldPrice">￥<b>${item.goods_price}</b></span>
+               		<span id="salePrice"><b>点我购买</b></span>
+           		</div>
+       		</dd>
+   		</dl></a>
              `
          });
          str+='</div>'

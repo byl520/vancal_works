@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+		<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+		<style>
+			.all form{
+				margin-top: 10px;
+			}
+			.ma{
+				width:262px;
+				height:32px;
+				margin-left:5px;
+				margin-top:5px;
+				margin-bottom: 15px;
+				box-shadow: 0 0 5px #ccc;
+				border: 1px solid skyblue;
+				
+			}
+			.phone,.pass,.againpass,.phone1{
+				width:413px;
+				height:32px;
+				margin: 5px;
+				margin-bottom: 15px;
+				box-shadow: 0 0 5px #ccc;
+				border: 1px solid skyblue;
+			}
+			
+			#false{
+				width:300px;
+				height: 100px;
+				border: 1px solid grey;
+				border-radius: 10px;
+				box-shadow: 0 0 5px;
+				font-size: 16px;
+				background: #fff;
+				position: absolute;
+				top: 120px;left: 55px;
+				z-index: 100;
+				display: none;
+			}
+			#false p{
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+			}
+			#false #yes{
+				display: block;
+				width: 50px;
+				height: 30px;
+				line-height: 30px;
+				margin: 0 auto;
+				color: #fff;
+				background: rgb(180,32,37);
+				border-radius: 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="top">
+	        <div class="top-logo"><img src="../images/11_03.jpg" /></div>
+	    </div>
+	    <!--top-->
+	    <div class="main">
+	        <div class="left">
+	            <dl>
+	                <dt><img src="../images/11_07.jpg" /></dt>
+	                <dd><img src="../images/11_03.jpg" /></dd>
+	                <strong>互联网快时尚品牌</strong>
+	
+	            </dl>
+	        </div>
+	        <div class="right">
+	            <strong>修改用户信息</strong>
+	            
+	            <!--表单-->
+	            <div class="all" style="position: relative;">
+	
+	                <form action="../servers/register.php" methd="get" class="form11">
+	                    <input class="phone1" type="text" name="mobile" value="请输入手机号">
+	                    <div class="div1 alert alert-danger">手机号码有误，请重填</div>
+	
+    
+	                    
+	                    <input type="text" class="phone" name="username" value="请输入用户名" />
+	                    <div class="divqq alert alert-danger">请输入用户名</div>
+	
+	
+	                   
+	                    <input class="pass" type="text" name="password" value="设定登入密码">
+	                    <div class="div4 alert alert-danger">密码最短6位，最长16位</div>
+	
+	
+	                    <input class="againpass" type="text" name="againPass" placeholder="再次输入密码">
+	                    <div class="div5 alert alert-danger">请确认输入密码</div>
+	
+	                    <input type="checkbox" class="checkbox">
+	                    <i>请阅读<a href="#">《VANCL凡客诚品服务条款》</a></i>
+	                    <input class="btn" type="submit" value="确认修改" />
+	                </form>
+	            </div>
+	            <div id="false">
+						<p>修改成功</p>
+						<button id="yes">
+							确定
+						</button>
+				</div>
+	
+	        </div>
+	    </div>
+	</body>
+	<script src="../js/utils.js"></script>
+	<script src="../js/cookie.js" ></script>
+	<script src="../jquery/jquery.js"></script>
+	<script src="../js/alter.js"></script>
+</html>

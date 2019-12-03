@@ -1,126 +1,157 @@
 *{
-				margin:0px;
-				padding:0px;
-			}
-			
-			.top{
-				width:1200px;
-				height:70px;
-				
-				
-				margin:0 auto;
-			}
-			.top-logo{
-			margin-top:50px;
-			}
-			.main{
-				width: 1200px;
-				height:520px;
-				margin:0 auto;
-				border-top:1px solid #7a7f89;
-				border-bottom:1px solid #7a7f89;
-				position:relative;
-				
-				
-			}
-			.main .left{
-				width:500px;
-				height: 520px;
-				margin-left:177px;
-				margin-top:86px;
-				float:left;
-				
-			}
-			.main .left dd img{
-				width:100px;height:30px;margin-top:20px;margin-left:86px;
-			}
-			.main .left strong{
-				width:170px;
-				position:absolute;left:370px;top:354px;font-size:20px;
-				border-left:2px solid black;
-				text-align: center;
-			}
-			.main .right{
-				width:500px;
-				height:520px;
-				/*border:1px solid #CCCCCC;*/
-				float:left;
-				position:relative;
-				}
-			.main .right strong{
-				font-weight: normal;
-				font-size: 24px;
-				color:#979797;
-				position:absolute;top:30px;
-				
-				
-			}
-			.main .right span{
-				
-				font-size:16px;
-				color:#979797;
-				position:absolute;top:34px;left:270px;
-				
-			}
-			.main .right a{
-				font-size:16px;
-				color:red;
-			text-decoration: none;
-			}
-				
-			.all{
-				width:420px;
-				height:430px;
-				border-top:2px solid  #b42025;
-				margin-top:60px;
-			}
-			.all i{
-				font-style: normal;
-				margin-top:-3px;
-			}
-			
-		
-			.ma{
-				width:262px;
-				height:45px;
-				margin-left:5px;
-				margin-top:36px;
-				margin-right:10px;
-				
-			}
-			.ma2{
-				width:120px;
-				height:45px;
-				
-				margin-left:-37px;
-			}
-			
-			.phone1{
-			width:272px;
-			height:45px;
-			margin-top:20px;
-			margin-left:5px;
-			}
-			.phone,.pass,.againpass{
-			width:413px;
-			height:40px;
-			margin-top:20px;
-			margin-left:6px;
-			}
-			
-			.checkbox{
-				width:15px;
-				height:15px;
-				margin-left:5px;
-				margin-top:17px;
-			}		
-			
-		.btn{
-				width:413px;
-				height:45px;
-				margin-left:8px;
-				margin-top:20px;
-				background: #C3C3C3;
-				font-size: 20px;
-				color:#ffffff;
-			}
+	margin:0px;
+	padding:0px;
+}
+
+.top{
+	width:1200px;
+	height:70px;
+	
+	
+	margin:0 auto;
+}
+.top-logo{
+margin-top:50px;
+}
+.main{
+	width: 1200px;
+	height:540px;
+	margin:0 auto;
+	border-top:1px solid #7a7f89;
+	border-bottom:1px solid #7a7f89;
+	position:relative;
+	
+	
+}
+.main .left{
+	width:500px;
+	height: 520px;
+	margin-left:177px;
+	margin-top:86px;
+	float:left;
+	
+}
+.main .left dd img{
+	width:100px;height:30px;margin-top:20px;margin-left:86px;
+}
+.main .left strong{
+	width:170px;
+	position:absolute;left:370px;top:354px;font-size:20px;
+	border-left:2px solid black;
+	text-align: center;
+}
+.main .right{
+	width:500px;
+	height:520px;
+	/*border:1px solid #CCCCCC;*/
+	float:left;
+	position:relative;
+	}
+.main .right strong{
+	font-weight: normal;
+	font-size: 24px;
+	color:#979797;
+	position:absolute;top:30px;
+	
+	
+}
+.main .right span{
+	
+	font-size:16px;
+	color:#979797;
+	position:absolute;top:34px;left:240px;
+	
+}
+.main .right b{
+	width: 50px;
+	font-size:16px;
+	color:red;
+	text-decoration: none;
+	
+}
+	
+.all{
+	width:420px;
+	height:430px;
+	border-top:2px solid  #b42025;
+	margin-top:60px;
+}
+.all i{
+	font-style: normal;
+	margin-top:-3px;
+}
+
+
+.ma{
+	width:262px;
+	height:32px;
+	margin-left:5px;
+	margin-top:5px;
+	box-shadow: 0 0 5px #ccc;
+	border: 1px solid skyblue;
+	
+}
+.ma2{
+	width:120px;
+	height:45px;
+	margin-left:-37px;
+}
+
+.phone,.pass,.againpass,.phone1{
+	width:413px;
+	height:32px;
+	margin: 5px;
+	box-shadow: 0 0 5px #ccc;
+	border: 1px solid skyblue;
+	}
+
+.checkbox{
+	width:15px;
+	height:15px;
+	margin-left:5px;
+	margin-top:17px;
+	display: inline;
+}		
+
+.btn{
+	width:413px;
+	height:45px;
+	margin-left:8px;
+	margin-top:20px;
+	background: #C3C3C3;
+	font-size: 20px;
+	color:#ffffff;
+}
+.div1,.divq,.divqq,.div4,.div5{
+	display:none;
+	/* border:1px solid #a10000; */
+	font-size: 12px;
+	width: 182px;
+	margin:0 0 0 10px;
+	height: 30px;
+	text-align: center
+
+}
+.alert, .alert-danger{
+	height: 30px;
+	line-height: 5px;
+
+}
+.img1{
+	display: inline;
+}
+.div6{
+	display:none;
+	width: 195px;
+	padding:0 10px;
+	height: 27px;
+	background:#f01e1e;
+	font-size: 12px;
+	font-weight: 800;
+	text-align: center;
+	line-height: 27px;
+	color:#fff;
+	margin-top: 5px;
+	 margin-left: 8px;
+	 
+}

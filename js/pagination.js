@@ -57,7 +57,7 @@ Pagination.prototype.setStyle = function () {
   this.ele.innerHTML = ''
   setCss(this.ele, {
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'flex-end',
     alignItems: 'center'
   })
 
@@ -84,13 +84,16 @@ Pagination.prototype.createEle = function () {
       setCss(div, {
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        padding: '7 15px'
       })
     } else {
       setCss(div, {
       	cursor: 'pointer',
-        border: '1px solid #333',
-        padding: '0 5px',
+        borderRadius: '3px',
+        backgroundColor:'#3498db',
+        color:'#fff',
+        padding: '7 15px',
         margin: '0 5px'
       })
     }
@@ -103,87 +106,92 @@ Pagination.prototype.createEle = function () {
 Pagination.prototype.creteList = function () {
   const pagenum = this.default.pageInfo.pagenum
   const totalpage = this.default.pageInfo.totalpage
-
-  if (totalpage <= 9) { // 小于九个直接渲染
-    for (let i = 1; i <= 9; i++) {
+  
+  for (let i = 1; i <= totalpage; i++) {
       const p = this.crealeP(i)
       this.list.appendChild(p)
     }
-  } else { // 大于九个分成几个步骤来渲染
-    if (pagenum < 5) {
-      // 1 2 3 4 5 ... 99 100
-      for (let i = 1; i <= 5; i++) {
-        this.list.appendChild(this.crealeP(i))
-      }
 
-      const span = document.createElement('span')
-      span.innerHTML = '...'
-      this.list.appendChild(span)
-
-      for (let i = totalpage - 1; i <= totalpage; i++) {
-        this.list.appendChild(this.crealeP(i))
-      }
-    } else if (pagenum === 5) {
-      // 1 2 3 4 5 6 7 ... 99 100
-      for (let i = 1; i <= 7; i++) {
-        this.list.appendChild(this.crealeP(i))
-      }
-
-      const span = document.createElement('span')
-      span.innerHTML = '...'
-      this.list.appendChild(span)
-
-      for (let i = totalpage - 1; i <= totalpage; i++) {
-        this.list.appendChild(this.crealeP(i))
-      }
-
-    } else if (pagenum > 5 && pagenum < totalpage - 4) {
-      for (let i = 1; i <= 2; i++) {
-        this.list.appendChild(this.crealeP(i))
-      }
-
-      const span = document.createElement('span')
-      span.innerHTML = '...'
-      this.list.appendChild(span)
-
-      for (let i = pagenum - 2; i <= pagenum + 2; i++) {
-        this.list.appendChild(this.crealeP(i))
-      }
-
-      const span2 = document.createElement('span')
-      span2.innerHTML = '...'
-      this.list.appendChild(span2)
-
-      for (let i = totalpage - 1; i <= totalpage; i++) {
-        this.list.appendChild(this.crealeP(i))
-      }
-    } else if (pagenum === totalpage - 4) {
-      for (let i = 1; i <= 2; i++) {
-        this.list.appendChild(this.crealeP(i))
-      }
-
-      const span = document.createElement('span')
-      span.innerHTML = '...'
-      this.list.appendChild(span)
-
-      for (let i = totalpage - 6; i <= totalpage; i++) {
-        this.list.appendChild(this.crealeP(i))
-      }
-
-    } else if (pagenum > totalpage - 4) {
-      for (let i = 1; i <= 2; i++) {
-        this.list.appendChild(this.crealeP(i))
-      }
-
-      const span = document.createElement('span')
-      span.innerHTML = '...'
-      this.list.appendChild(span)
-
-      for (let i = totalpage - 4; i <= totalpage; i++) {
-        this.list.appendChild(this.crealeP(i))
-      }
-    }
-  }
+//if (totalpage <= 9) { // 小于九个直接渲染
+//  for (let i = 1; i <= 9; i++) {
+//    const p = this.crealeP(i)
+//    this.list.appendChild(p)
+//  }
+//} else { // 大于九个分成几个步骤来渲染
+//  if (pagenum < 5) {
+//    // 1 2 3 4 5 ... 99 100
+//    for (let i = 1; i <= 5; i++) {
+//      this.list.appendChild(this.crealeP(i))
+//    }
+//
+//    const span = document.createElement('span')
+//    span.innerHTML = '...'
+//    this.list.appendChild(span)
+//
+//    for (let i = totalpage - 1; i <= totalpage; i++) {
+//      this.list.appendChild(this.crealeP(i))
+//    }
+//  } else if (pagenum === 5) {
+//    // 1 2 3 4 5 6 7 ... 99 100
+//    for (let i = 1; i <= 7; i++) {
+//      this.list.appendChild(this.crealeP(i))
+//    }
+//
+//    const span = document.createElement('span')
+//    span.innerHTML = '...'
+//    this.list.appendChild(span)
+//
+//    for (let i = totalpage - 1; i <= totalpage; i++) {
+//      this.list.appendChild(this.crealeP(i))
+//    }
+//
+//  } else if (pagenum > 5 && pagenum < totalpage - 4) {
+//    for (let i = 1; i <= 2; i++) {
+//      this.list.appendChild(this.crealeP(i))
+//    }
+//
+//    const span = document.createElement('span')
+//    span.innerHTML = '...'
+//    this.list.appendChild(span)
+//
+//    for (let i = pagenum - 2; i <= pagenum + 2; i++) {
+//      this.list.appendChild(this.crealeP(i))
+//    }
+//
+//    const span2 = document.createElement('span')
+//    span2.innerHTML = '...'
+//    this.list.appendChild(span2)
+//
+//    for (let i = totalpage - 1; i <= totalpage; i++) {
+//      this.list.appendChild(this.crealeP(i))
+//    }
+//  } else if (pagenum === totalpage - 4) {
+//    for (let i = 1; i <= 2; i++) {
+//      this.list.appendChild(this.crealeP(i))
+//    }
+//
+//    const span = document.createElement('span')
+//    span.innerHTML = '...'
+//    this.list.appendChild(span)
+//
+//    for (let i = totalpage - 6; i <= totalpage; i++) {
+//      this.list.appendChild(this.crealeP(i))
+//    }
+//
+//  } else if (pagenum > totalpage - 4) {
+//    for (let i = 1; i <= 2; i++) {
+//      this.list.appendChild(this.crealeP(i))
+//    }
+//
+//    const span = document.createElement('span')
+//    span.innerHTML = '...'
+//    this.list.appendChild(span)
+//
+//    for (let i = totalpage - 4; i <= totalpage; i++) {
+//      this.list.appendChild(this.crealeP(i))
+//    }
+//  }
+//}
 }
 
 // 提取了一个专门用来创建 li 的函数
@@ -195,14 +203,17 @@ Pagination.prototype.crealeP = function (i) {
   p.innerHTML = i
   setCss(p, {
   	cursor: 'pointer',
-    border: '1px solid #333',
+    borderRadius: '3px',
+    backgroundColor:'#ecf0f1',
     margin: '0 5px',
-    padding: '0 5px'
+    padding: '7px 10px'
   })
 
   if (i === this.default.pageInfo.pagenum) {
     setCss(p, {
-      backgroundColor: '#e44251'
+      backgroundColor: '#3498db',
+      color:'#fff',
+      padding: '7px 10px'
     })
   }
 
@@ -215,16 +226,19 @@ Pagination.prototype.go = function () {
   const btn = document.createElement('button')
   setCss(inp, {
     outline: 'none',
-    width: '50px',
-    height: '20px'
+    width: '25px',
+    height: '15px'
   })
   inp.value = this.default.pageInfo.pagenum
   inp.type = 'number'
   setCss(btn, {
     outline: 'none',
+    borderRadius:'3px',
+    border:'none',
     width: '30px',
-    height: '24px',
-    marginLeft: '5px'
+    height: '20px',
+    marginLeft: '5px',
+    padding: '2px 10px'
   })
   btn.innerHTML = 'go'
   this.ele.appendChild(inp)
@@ -234,13 +248,13 @@ Pagination.prototype.go = function () {
 // 判断一下禁用
 Pagination.prototype.isDis = function () {
   if (this.default.pageInfo.pagenum === 1) {
-    this.ele.children[0].style.backgroundColor = '#ccc'
-    this.ele.children[1].style.backgroundColor = '#ccc'
+    this.ele.children[0].style.backgroundColor = '#c9c9a7'
+    this.ele.children[1].style.backgroundColor = '#c9c9a7'
   }
 
   if (this.default.pageInfo.pagenum === this.default.pageInfo.totalpage) {
-    this.ele.children[3].style.backgroundColor = '#ccc'
-    this.ele.children[4].style.backgroundColor = '#ccc'
+    this.ele.children[3].style.backgroundColor = '#c9c9a7'
+    this.ele.children[4].style.backgroundColor = '#c9c9a7'
   }
 }
 
@@ -254,6 +268,7 @@ Pagination.prototype.dongcidaci = function () {
     if (target.className === 'first' && this.default.pageInfo.pagenum !== 1) {
       this.default.pageInfo.pagenum = 1
       this.setStyle()
+      
     }
 
     if (target.className === 'prev' && this.default.pageInfo.pagenum !== 1) {
@@ -274,6 +289,7 @@ Pagination.prototype.dongcidaci = function () {
     if (target.nodeName === 'P' && target.innerHTML - 0 !== this.default.pageInfo.pagenum) {
       this.default.pageInfo.pagenum = target.innerHTML - 0
       this.setStyle()
+      
     }
 
     if (target.nodeName === 'BUTTON' && target.previousElementSibling.value - 0 !== this.default.pageInfo.pagenum) {
